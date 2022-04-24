@@ -1,2 +1,5 @@
 ---
-# handlers file for set_hostname
+
+- name: reboot system
+  ansible.builtin.reboot:
+

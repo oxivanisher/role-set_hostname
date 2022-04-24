@@ -4,4 +4,5 @@
   ansible.builtin.hostname:
     name: "{{ ansible_hostname }}"
     use: systemd
+  notify: reboot system
 
