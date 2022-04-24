@@ -1,8 +1,8 @@
 ---
 
-- name: set hostname to ansible_hostname
+- name: set hostname to inventory_hostname_short
   ansible.builtin.hostname:
-    name: "{{ ansible_hostname }}"
+    name: "{{ inventory_hostname_short }}"
     use: systemd
   notify: reboot system
 
