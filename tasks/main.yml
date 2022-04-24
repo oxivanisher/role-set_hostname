@@ -6,3 +6,6 @@
     use: systemd
   notify: reboot system
 
+- name: force run the handlers
+  meta: flush_handlers
+
