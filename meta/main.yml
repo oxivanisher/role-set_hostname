@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: set_hostname
+  namespace: oxivanisher
   author: Marc Urben
   description: Configure hostname
   company: Thunderbluff
