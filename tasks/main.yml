@@ -4,6 +4,8 @@
     name: "{{ inventory_hostname_short }}"
     use: systemd
   notify: Reboot system
+  become: true
+  become_user: root
 
 - name: Force run the handlers
   ansible.builtin.meta: flush_handlers
